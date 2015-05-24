@@ -1,0 +1,88 @@
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family:verdana, arial, helvetica, sans-serif;
+	background-color:white;
+	font-size:11px;
+	background: url('/static/images/ASDC_logo_BIB.png') no-repeat left top, url('/static/images/ASDC_BIB.png') no-repeat right top;
+
+	}
+h1 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:28px;
+	line-height:28px;
+	font-weight:900;
+	color:#ccc;
+	}
+p {
+	font:11px/20px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 16px 0px;
+	padding:0px;
+        font-size: 11px;
+	}
+#Content>p {margin:0px;}
+#Content>p+p {text-indent:30px;}
+
+a {
+	color:#09c;
+	font-size:11px;
+	text-decoration:none;
+	font-family:verdana, arial, helvetica, sans-serif;
+	}
+a:link {color:#09c;}
+a:visited {color:#07a;}
+a:hover {background-color:#eee;}
+
+#Logo {
+    background-image:url('images/ASDC_logo_beta.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:left;
+    background-image:url('images/home.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:right;
+
+	}
+
+#Header {
+   	margin:70px 0px 10px 0px;
+	padding:17px 0px 0px 20px;
+	height:40px;
+	border-style:solid;
+	border-color:#999999;
+	border-width:1px 0px; /* top and bottom borders: 1px; left and right borders: 0px */
+	line-height:13px;
+    font-size:13px;
+	background-color:#c9c9c9;
+	}
+/* I've heard this called the "be nice to Opera 5" rule. Basically, it feeds correct 
+length values to user agents that exhibit the parsing error exploited above yet get 
+the CSS box model right and understand the CSS2 parent-child selector. ALWAYS include
+a "be nice to Opera 5" rule every time you use the Tantek Celik hack (above). */
+body>#Header {height:22px;}
+
+#Content {
+	margin:0px 50px 50px 200px;
+	padding:10px;
+	}
+
+#Menu {
+	position:absolute;
+	top:110px;
+	left:15px;
+	padding:10px;
+	}
+/* Again, "be nice to Opera 5". */
+body>#Menu {width:150px;}
+
+.error {color: red}
+
+.hidden {
+    display: none;
+}
+
+
+

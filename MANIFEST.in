@@ -1,0 +1,5 @@
+include README.txt
+recursive-include pubblicazioniASDC/static *
+recursive-include pubblicazioniASDC/static/images *
+recursive-include pubblicazioniASDC/js *
+recursive-include pubblicazioniASDC/views  *

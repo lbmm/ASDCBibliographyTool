@@ -1,0 +1,28 @@
+v2.1
+
+* Fixed PDF
+* added interaction to timelines (missions and authors)
+* added publications total on the metrics visualization
+* re-packaging
+* new authors name compositions for the ADS download
+* fixed issues of ticket:83
+* new startup script
+* removed xtop package
+
+v2.1.1
+
+* fixed issue with missions total number of publications in the mission metrics page
+* changed email icon
+
+v2.1.2
+
+* fixed problem in the PDF creation for funny titles
+
+v2.1.3
+
+* fixed bug in the update of the author into "Modify confirmed publications" session
+
+v2.1.4
+* fixed another bug in the update of the author into "Modify confirmed publications"
+* removed some logs print out
+* removed typo into userDAO.py

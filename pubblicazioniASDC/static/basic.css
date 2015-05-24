@@ -1,0 +1,440 @@
+/* <!-- */
+/* General styles */
+body {
+    font-family:arial,helvetica,sans-serif;
+    font-size:9pt;
+    margin:0;
+    border:0;			/* This removes the border around the viewport in old versions of IE */
+    background:#fff;
+    min-width:600px;    /* Minimum width of layout - remove line if not required */
+    width:100%;
+    height:100%;
+    /* The min-width property does not work in old versions of Internet Explorer */
+}
+
+a {
+    color:#369;
+}
+
+a.red {
+    color:red;
+}
+a.red:link {
+    color:red;
+}
+a.red:visited {
+    color:red;
+}
+a.red:hover{
+    color:red;
+}
+
+a.disabled { color:gray; }
+
+.containerBody {
+    padding:2px 10px 2px 10px;
+}
+
+a:link {
+    background-color:transparent;
+    color:#000099;
+    font-weight:bold;
+    text-decoration:none;
+}
+a.disabled:link { color:gray;}
+a.disabled:visited { color:gray;}
+a.disabled:hover { color:gray;}
+
+a:visited {
+    background-color:transparent;
+    color:#000099;
+    font-weight:bold;
+    text-decoration:none;
+}
+a:hover {
+    background-color:transparent;
+    color:#D68000;
+    font-weight:bold;
+}
+img {
+    border:0 none;
+}
+
+.nopad {
+    padding:0;
+}
+a:hover {
+    color:#fff;
+    background:#369;
+    text-decoration:none;
+}
+h1, h2, h3 {
+    margin:.8em 0 .2em 0;
+    padding:0;
+}
+
+p {
+    margin:.4em 0 .8em 0;
+    padding:0;
+}
+/*img {
+		margin:10px 0 5px;
+	}*/
+/* Header styles */
+#header {
+    clear:both;
+    width:100%;
+}
+#header {
+    border-bottom:1px solid #000;
+}
+#header p,
+#header h1,
+#header h2 {
+    padding:.4em 15px 0 15px;
+    margin:0;
+}
+#header ul {
+    clear:left;
+    width:100%;
+    list-style:none;
+    margin:10px 0 0 0;
+    padding:0;
+}
+#header ul li {
+    display:inline;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#header ul li a {
+    display:block;
+    margin:0 0 0 1px;
+    padding:3px 10px;
+    text-align:center;
+    background:#eee;
+    color:#000;
+    text-decoration:none;
+    position:relative;
+    left:15px;
+    line-height:1.3em;
+}
+#header ul li a:hover {
+    background:#369;
+    color:#fff;
+}
+#header ul li a.active,
+#header ul li a.active:hover {
+    color:#fff;
+    background:#000;
+    font-weight:bold;
+}
+#header ul li a span {
+    display:block;
+}
+/* 'widths' sub menu */
+#layoutdims {
+    clear:both;
+    background:#eee;
+    border-top:4px solid #000;
+    margin:0;
+    padding:6px 15px !important;
+    text-align:right;
+}
+/* column container */
+.colmask {
+    position:relative;		/* This fixes the IE7 overflow hidden bug */
+    clear:both;
+    float:left;
+    width:100%;			/* width of whole page */
+    overflow:hidden;	/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+    float:left;
+    width:100%;				/* width of page */
+    position:relative;
+}
+.col1,
+.col2,
+.col3 {
+    float:left;
+    position:relative;
+    padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead
+								only padding top and bottom is included here, make it whatever value you need */
+    overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+    background:#eee;		/* right column background colour */
+}
+.threecol .colmid {
+    right:30%;				/* width of the right column */
+    background:#fff;		/* center column background colour */
+}
+.threecol .colleft {
+    right:44%;				/* width of the middle column */
+    background:#f4f4f4;		/* left column background colour */
+}
+.threecol .col1 {
+    width:47%;				/* width of center column content (column width minus padding on either side) */
+    left:102%;				/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+    width:23%;				/* Width of left column content (column width minus padding on either side) */
+    left:28%;				/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+    width:26%;				/* Width of right column content (column width minus padding on either side) */
+    left:74.5%;				/* Please make note of the brackets here:
+								(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+.doublepage {
+    background:#EEEEEE none repeat scroll 0 0;
+}
+.doublepage .colleft {
+    background:#FFFFFF none repeat scroll 0 0;
+    right:50%;
+}
+.doublepage .col1 {
+    left:52%;
+    width:46%;
+}
+.doublepage .col2 {
+    left:56%;
+    width:46%;
+}
+
+/* Footer styles */
+#footer {
+    clear:both;
+    width:100%;
+    border-top:1px solid #000;
+}
+#footer p {
+    padding:10px;
+    margin:0;
+}
+/* --> */
+
+
+fieldset.style {
+    margin-bottom:2px;
+    margin-top:2px;
+}
+
+.aprichiudi {
+    color:#0033BD;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+}
+.aprichiudi a:hover {
+    color:#0033BD;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    margin:0px;
+    padding:0px;
+    text-decoration:underline;
+}
+.aprichiudi a:visited {
+    color:#0033BD;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+}
+.aprichiudi a:link {
+    color:#0033BD;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    font-weight:bold;
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+}
+
+
+/* Context Menu tasto destro */
+
+.cmenu {margin: 0; padding: 0.3em; list-style-type: none;
+        background-color: white;}
+.cmenu li:hover {}
+.cmenu hr {border: 0; border-bottom: 1px solid grey;
+           margin: 3px 0px 3px 0px; width: 10em;}
+.cmenu a {border: 0 !important;}
+.cmenu a:hover {text-decoration: underline !important;}
+.cmenu .topSep {font-size: 90%; border-top: 1px solid gray;
+                margin-top: 0.3em; padding-top: 0.3em;}
+
+
+
+
+.title4 {
+    -x-system-font:none;
+    color:#003EAD;
+    font-family:Tahoma,Arial,sans-serif;
+    font-size:13px;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:bold;
+    line-height:normal;
+}
+.tit5 {
+    -x-system-font:none;
+    color:#000066;
+    font-family:Tahoma,Arial,sans-serif;
+    font-size:13px;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:bold;
+    line-height:normal;
+}
+.textb {
+    font-size:12px;
+    font-weight:bold;
+}
+.textb_red {
+    color:red;
+    font-family:Tahoma,Arial,sans-serif;
+    font-size:12px;
+    font-weight:bold;
+}
+.small_text {
+    font-size:11px;
+}
+.small_text2 {
+    font-size:12px;
+}
+a.small_text2 {
+    color:#3266C9;
+    font-weight:normal;
+    text-decoration:underline;
+}
+a.small_text2:hover {
+    color:#000066;
+    font-weight:normal;
+}
+a.small_text {
+    color:#3266C9;
+    font-weight:normal;
+    text-decoration:underline;
+}
+a.small_text:hover {
+    color:#000066;
+    font-weight:normal;
+}
+
+
+.box_form {
+    background:#F9F9F9 url(sfumatura.gif) repeat-x scroll center bottom;
+    border:1px solid #C0C0C0;
+    padding:2px 2px 5px;
+    text-align:left;
+    width:244px;
+}
+.formnospace {
+    margin:0em;
+    padding:0em;
+    border:0px;
+}
+
+a.button{
+    background:url(img/button.gif) no-repeat;
+    color:#555555;
+    font-weight:bold;
+    height:30px;
+    line-height:29px;
+    margin-bottom:14px;
+    text-decoration:none;
+    width:191px;
+    float:left;
+}
+
+a.button130{
+    background:url(img/button130.gif) no-repeat;
+    color:#555555;
+    font-weight:bold;
+    height:30px;
+    line-height:29px;
+    margin-bottom:14px;
+    text-decoration:none;
+    width:130px;
+    float:left;
+}
+
+a:hover.button{
+    color:#0066CC;
+}
+
+.add{
+    background:url(http://tools.asdc.asi.it/commons/icons/add.gif) no-repeat 10px 8px;
+    text-indent:30px;
+    display:block;
+}
+.delete{
+    background:url(http://tools.asdc.asi.it/commons/icons/delete.gif) no-repeat 10px 8px;
+    text-indent:30px;
+    display:block;
+}
+.user{
+    background:url(http://tools.asdc.asi.it/commons/icons/user.gif) no-repeat 10px 8px;
+    text-indent:30px;
+    display:block;
+}
+.search{
+    background:url(http://tools.asdc.asi.it/commons/icons/search.gif) no-repeat 10px 8px;
+    text-indent:30px;
+    display:block;
+}
+.login {
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.login legend {
+    color:#0B77B7;
+    font-size:1.3em;
+}
+.login label {
+    float:left;
+    margin-right:1em;
+    text-align:right;
+    width:10em;
+    font:bold 1.1em arial,sans-serif;
+}
+
+.login form {
+    width:27em;
+    text-align: center;
+     background:url(http://tools.asdc.asi.it/commons/icons/user.gif) no-repeat 95% 1em;
+}
+
+.login input {
+    font:1.0em arial,sans-serif;
+    padding:0.15em;
+    width:10em;
+}
+.login fieldset div {
+    clear:both;
+    margin:0.3em 0;
+}
+
+.contact {
+    background:url(http://tools.asdc.asi.it/commons/icons/email2.gif) no-repeat 95% 1em;
+}
+

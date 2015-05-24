@@ -8,3 +8,5 @@ It handles:
 * meta-data pubblications users auto-archiving
 * statistsc reports 
 * search on the DB
+* 
+web site available at http://publications.asdc.asi.it

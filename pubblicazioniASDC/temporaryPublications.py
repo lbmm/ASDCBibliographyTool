@@ -23,7 +23,7 @@ import handle_asdc_author
 
 temporary_app = bottle.Bottle()
 
-connection_string = "mongodb://localhost"
+connection_string = ""
 connection = pymongo.MongoClient(connection_string)
 database = connection.publication
 

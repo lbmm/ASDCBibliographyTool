@@ -3,10 +3,12 @@ try:
 except ImportError:
     from distutils.core import setup
 
+import pubblicazioniASDC
+
 config = {
     'description': 'ASDC Publication portal',
     'author': 'fmoscato',
-    'version': 2.12,
+    'version': pubblicazioniASDC.__version__,
     'download_url': 'Where to download it.',
     'url': 'publications.asdc.asi.it',
     'author_email': 'fmoscato@asdc.asi.it',

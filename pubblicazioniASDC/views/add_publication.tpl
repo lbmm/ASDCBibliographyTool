@@ -69,7 +69,7 @@
           <div class="hidden">
            <select name="asdc_authors" size="{{len(asdc_authors)}}" multiple>
                %for auth in asdc_authors:
-                 <option value="{{auth['username']+ "_" + auth['pub_name']}}">{{auth['name'] + " " + auth['lastname']}}  </option>
+                 <option value="{{auth['username']+ "_" + ','.join(auth['pub_name'])}}">{{auth['name'] + " " + auth['lastname']}}  </option>
                % end
             </select>
           </div>

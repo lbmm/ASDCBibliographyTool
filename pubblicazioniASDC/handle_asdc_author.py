@@ -64,8 +64,11 @@ def def_asdc_auth_auto_archiving(string_authors, asdc_auth):
     arr_auth = [pubUtilities.clean_string(auth) for auth in author_list]
 
     authors_cleaned = []
-    asdc_pub_name = [(asdc.split("_"))[1] for asdc in asdc_auth]
-
+    #dirty trick: my apologies
+    #select all the pub_name that comes from the string encoded in the form (username_pubname)
+    #for each authors I could have multiple pub_name (due to the multiple names)
+    #I need only one, so discard the rest
+    asdc_pub_name = [((asdc.split("_"))[1]).split(",")[0] for asdc in asdc_auth]
     for i in range(len(arr_auth)):
 
         auth = (arr_auth[i]).strip()

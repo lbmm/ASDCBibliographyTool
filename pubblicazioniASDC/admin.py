@@ -25,7 +25,7 @@ import validatePublications
 
 admin_app = bottle.Bottle()
 
-connection_string = ""
+connection_string = "mongodb://localhost"
 connection = pymongo.MongoClient(connection_string)
 database = connection.publication
 

@@ -30,7 +30,7 @@ app.mount('/admin/', admin_app)
 app.mount('/metrics', metric_app)
 app.mount('/tmp_publications', temporary_app)
 
-connection_string = ""
+connection_string = "mongodb://localhost"
 connection = pymongo.MongoClient(connection_string)
 database = connection.publication
 

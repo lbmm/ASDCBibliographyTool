@@ -23,7 +23,7 @@ import handle_asdc_author
 
 temporary_app = bottle.Bottle()
 
-connection_string = ""
+connection_string = "mongodb://localhost"
 connection = pymongo.MongoClient(connection_string)
 database = connection.publication
 
@@ -49,7 +49,7 @@ def present_add_publication():
                       'DOI': '',
                       'title': '',
                       'authors': '',
-                      'asdc_authors':[],
+                      'asdc_authors': [],
                       'pub_date': '',
                       'origin': '',
                       'magazine': '',

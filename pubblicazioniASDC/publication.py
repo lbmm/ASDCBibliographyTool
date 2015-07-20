@@ -701,6 +701,9 @@ def process_validation():
         else:
             msg.append(biblicode)
 
+    if not biblicode_toinvalidate:
+         msg.append(c.publications_confirm)
+
     if msg:
         msg_str = "Publications invalidate: <br> %s" % '<br> '.join(msg)
     if errors:

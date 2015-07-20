@@ -1,5 +1,5 @@
 #!/bin/bash
 
-TMP_DIR=''
+TMP_DIR='/tmp'
 cd ../pubblicazioniASDC 
 python publication.py --dir $(pwd) --tmp $TMP_DIR

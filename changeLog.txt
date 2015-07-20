@@ -30,3 +30,9 @@ v2.1.4
 v2.1.5
 * fixed bug of multiple asdc pub name in the insertion of a user publication
 * changed the setup version handling
+
+v2.2
+* enforced users messages
+* fixed bug in the admin view 
+* changed how to pick up the years in public menu
+* removed useless print 

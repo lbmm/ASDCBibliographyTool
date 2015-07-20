@@ -1,5 +1,7 @@
 __author__ = 'fmoscato'
 
+from datetime import date
+
 #dummy file with some constant values
 
 END_DATE = "02/20/2020"
@@ -50,5 +52,12 @@ URL_ADS = "http://adsabs.harvard.edu/abs/"
 
 pdf_file_name = "publications_list"
 
+start_year = 2000 
+this_year = date.today().year
+years = [x for x in range(start_year, this_year+1)]
 
-years = [2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005,2004, 2003, 2002, 2001, 2000]
+"""
+USER Communication
+"""
+
+publications_confirm = 'All publications accepted. Publications can be changed until the repository manager will close the period'

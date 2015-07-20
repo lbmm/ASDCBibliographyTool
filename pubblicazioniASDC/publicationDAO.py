@@ -251,7 +251,6 @@ class PublicationDAO(object):
             #to find the author list
             record = self.publications.find_one({'_id': biblicode}, {'authors': 1, '_id': 0})
             asdc_names = [(asdc.split("_"))[0] for asdc in auth_list]
-            print handle_asdc_author.overwrite_asdc_authors(record['authors'], auth_list)
             #update the entry and update the asdc authors and total authors
             self.publications.update({'_id': biblicode},
                                      {'$set':

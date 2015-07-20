@@ -203,7 +203,7 @@ def present_json():
 @bottle.get('/json_authors')
 def present_json_authors():
 
-    keys = OrderedDict((u['username'] + "_" + u['pub_name'], u['name'] + " " + u['lastname']) for u in users.get_users())
+    keys = OrderedDict((u['username'] + "_" + u['pub_name'][0], u['name'] + " " + u['lastname']) for u in users.get_users())
     return json.dumps(keys)
 
 

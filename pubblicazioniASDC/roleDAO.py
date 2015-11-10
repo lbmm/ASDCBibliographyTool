@@ -3,7 +3,7 @@ _author_ = 'fmoscato'
 import pymongo.errors
 
 
-class RoleDAO:
+class RoleDAO(object):
 
     def __init__(self, db):
         self.db = db

@@ -23,7 +23,7 @@ config = {
                            ]
                     },
     'package_data': {
-        'pubblicazioniASDC': ['static/*', 'static/images/*', 'js/*.js', 'views/*.tpl'],
+        'pubblicazioniASDC': ['static/*.css', 'static/images/*', 'js/*.js', 'views/*.tpl'],
        },
         'include_package_data': True
 }

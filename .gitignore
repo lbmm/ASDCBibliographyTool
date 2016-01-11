@@ -60,6 +60,6 @@ target/
 #PyCharm
 .idea
 #Project specific
-urls.py
+#urls.py
 *.pdf
 *.doc
